@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2.4rem;
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 100rem;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid #1fbebc;
+}
+h1 {
+  background-image: linear-gradient(to bottom, #1c7775, #1fbebc);
+  grid-column: 1/-1;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+canvas {
+  width: auto;
+}
+
+.input-container,
+.graph-container,
+.results-container {
+  border: 1px solid #000;
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.graph-container {
+  grid-row: 2/4;
+  grid-column: 2/3;
+  height: 80vh;
+}

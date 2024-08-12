@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic Progression</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/graph.ob.js"></script>
+    <script src="./js/graph_use.ob.js"></script>
+    <script src="./js/graph_use2.ob.js"></script>
+    <script src="./js/graph_line_use.ob.js"></script>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Arithmetic Progression</h1>
+      <div class="input-container">
+        <h2>Arithmetic Progression</h2>
+        <div class="input-slider-div">
+          <label for="first-term-slider"
+            >Value of the first term (a <sub>1</sub>)</label
+          >
+          <input type="range" name="first-term-slider" id="firstTermSlider"
+          min="2" max="10" step:"1" value="3"/>
+          <span class="a1">3</span>
+        </div>
+        <div class="input-slider-div">
+          <label for="commom-difference-slider">Common Difference(d)</label>
+          <input type="range" name="commom-difference-slider"
+          id="commonDifferenceSlider" min="2" max="10" step:"1" value="2"/>
+          <span class="d">2</span>
+        </div>
+        <div class="input-slider-div">
+          <label for="number-terms">Number of terms(n)</label>
+          <input type="range" name="number-terms-slider" id="numberTermsSlider"
+          min="3" max="10" step:"1" value="3"/>
+          <span class="n">3</span>
+        </div>
+      </div>
+      <div class="results-container">
+        <h2>Results</h2>
+        <h3>Formula: a<sub>n</sub> = a<sub>1</sub>+(n-1)&timesd</h3>
+        <p>a<sub>1</sub>=<span class="a1">2</span></p>
+        <p>d=<span class="d">3</span></p>
+        <p>n=<span class="n">3</span></p>
+        <p>a<sub>n</sub>=<span class="an"></span></p>
+        <p>Arithmetic Progression Series: <span class="ap"></span></p>
+      </div>
+      <div class="graph-container">
+        <h2>Plots</h2>
+        <div id="graph"></div>
+      </div>
+    </div>
+  </body>
+</html>
