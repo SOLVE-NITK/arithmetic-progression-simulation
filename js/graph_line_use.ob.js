@@ -41,16 +41,16 @@ function graphline(_0xD9B9, _0xD9A9, _0xD9C9, _0xD9D9) {
         showInLegend: true,
         name: _$_85d1[7],
         markerSize: 10, // Markers are hidden by default
-        toolTipContent: "{a<sub>n</sub>}: {n}", // Displays the tooltip with markers
+        // toolTipContent: "{a<sub>n</sub>}: {n}", // Displays the tooltip with markers
         dataPoints: _0xD9A9,
-        mouseover: function (e) {
-          e.dataSeries.markerSize = 5;
-          e.chart.render();
-        }, // Show markers on hover
-        mouseout: function (e) {
-          e.dataSeries.markerSize = 0;
-          e.chart.render();
-        }, // Hide markers when not hovering
+        // mouseover: function (e) {
+        //   e.dataSeries.markerSize = 5;
+        //   e.chart.render();
+        // }, // Show markers on hover
+        // mouseout: function (e) {
+        //   e.dataSeries.markerSize = 0;
+        //   e.chart.render();
+        // }, // Hide markers when not hovering
       },
     ],
   });
