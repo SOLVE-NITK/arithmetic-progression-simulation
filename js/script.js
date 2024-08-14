@@ -57,7 +57,6 @@ function calculateArithemticSeries() {
   plotGraph();
 }
 function plotGraph() {
-  console.log(arithmeticSeriesArray);
   document.getElementById("graph").innerHTML = "";
   graphline("graph", arithmeticSeriesArray, "n", "an", "red");
 }
